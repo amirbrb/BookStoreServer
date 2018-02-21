@@ -5,6 +5,11 @@
   "main": "server.js",
   "repository": "",
   "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "scripts": {
+    "dev": "server.js",
+    "build": "node build/build.js",
+    "lint": "eslint --ext .js,.vue src"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "mongodb": "*",

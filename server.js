@@ -21,6 +21,8 @@ app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Credentials', true);
     // Pass to next layer of middleware
     res.setHeader("Content-Type","application/json");
+    
+    console.log('got request from ' +  req.headers.origin + '. requested url: ' + req.url);
     next();
 });
 

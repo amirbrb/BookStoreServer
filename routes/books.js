@@ -4,7 +4,7 @@ const dataService = require('../services/dataService');
 
 
 router.use(function(req, res, next) {
-    next();
+   next();
 });
 
 router.get('/', function(req, res) {
